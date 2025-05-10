@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+top: 13px;
+}
+#carrito{
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+body {
+  font-family: Montserrat2;
+}
+header {
+    background-color: #EE799A;
+    color: white;
+    padding: 35px;
+	margin: auto;
+	text-align: center;
+}
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: #EE799A;
+}
+p{
+	padding-left: 20px;
+}
+footer{
+	background-color: #7A7AB9;
+    color: white;
+	font-family: Montserrat4;
+}
+#titulocompras, #subtitulotutotal{
+	color: #D1488C;
+	font-family: Montserrat;
+}
+#tituloresumencompras{
+	color: #EF7999;
+}
+#subtituloenvio, #subtitulopromo{
+	color: #887CB9;
+}
+.nav-tabs .nav-link{
+	color: black;
+}
+
+.nav-tabs .nav-link:hover{
+	  color: #EE799A;
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #EE799A;
+  color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+nav a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 8px 16px;
+	color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+	color: #7C3AED;
+}
+.slide-button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5em;
+  width: 250px;
+  background-color: #D1488C; 
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: Montserrat2;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.slide-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+  transition: transform 0.3s ease;
+}
+
+.slide-text.second {
+  transform: translateY(100%);
+}
+
+.slide-button:hover .slide-text.first {
+  transform: translateY(-100%);
+}
+
+.slide-button:hover .slide-text.second {
+  transform: translateY(0);
+}
+@font-face{
+	font-family: "Montserrat";
+	src: url("static/Montserrat-Black.ttf");
+}
+@font-face{
+	font-family: "Montserrat2";
+	src: url("static/Montserrat-Bold.ttf");
+}
+@font-face{
+	font-family: "Montserrat3";
+	src: url("static/Montserrat-Light.ttf")
+}
+@font-face{
+	font-family: "Montserrat4";
+	src: url("static/Montserrat-Medium.ttf")
+}

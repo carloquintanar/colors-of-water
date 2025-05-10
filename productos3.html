@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Productos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilosproductos.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1><a href="index.html"><img src="images/lumaslogo.png" width="200"></a></h1>
+	</header>
+<nav>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="index.html"><img src="images/home.png" width="35px"></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="producto.html">Productos</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="Contacto.html" role="button" data-bs-toggle="dropdown">Contacto</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contacto.html">Formulario</a></li>
+        <li><a class="dropdown-item" href="faqs.html">FAQ´s</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="carrito.html"><img src="images/carrito.png" width="35px"></a>
+    </li>
+  </ul>
+  <hr class="linea">
+</nav>
+<div class="container mt-4">
+	<div class="row">
+	<!-- Filtro -->
+      <div class="col-md-3">
+        <div class="filtro p-3 border rounded">
+          <h2>Filtrar Productos</h2>
+          <form>
+            <div class="form-group">
+              <label for="precioMin">Precio Mínimo:</label>
+              <input type="number" id="precioMin" name="precioMin" class="form-control" placeholder="Precio mínimo" min="0">
+            </div>
+
+            <div class="form-group">
+              <label for="precioMax">Precio Máximo:</label>
+              <input type="number" id="precioMax" name="precioMax" class="form-control" placeholder="Precio máximo" min="0">
+            </div>
+
+            <div class="form-group">
+              <label for="material">Material:</label>
+              <select id="material" name="material" class="form-control">
+                <option value="metal">Metal</option>
+                <option value="plastico">Plástico</option>
+                <option value="papel">Papel</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn w-100">Aplicar Filtros</button>
+          </form>
+        </div>
+      </div>
+
+
+	<!-- Productos -->
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Producto 1 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="hojas.html">
+              <img src="images/libretas/lib16.jpg" class="img-fluid rounded" alt="acri1">
+            </a>
+            <h4 class="text-center text-info mt-2">Hojas Punteadas</h4>
+            <p class="text-left">
+              <strong>Contenido: </strong>50 hojas.<br>
+				<strong>Medidas: </strong>Carta.<br>
+				<strong>Gramaje: </strong>90 g/m².<br>
+				<strong>Precio: </strong>$65 el paquete
+            </p>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="heroe.html">
+              <img src="images/pcinta/peg1.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Corrector Súper Heroes</h4>
+            <p class="text-left">
+              <strong>Medidas: </strong>5mm x 8m. <br>
+				<strong>Contiene: </strong>1 corrector.<br>
+				<strong>Precio: </strong>$55 c/u.
+            </p>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="norino.html">
+              <img src="images/pcinta/peg3.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Norio Pastel</h4>
+            <p class="text-left">
+              <strong>Contiene: </strong>1 corrector.<br>
+				<strong>Precio: </strong>$65 c/u.
+            </p>
+          </div>
+			<!-- Producto 4 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="click.html">
+              <img src="images/plumones/plu15.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Click Art - Zebra</h4>
+            <p class="text-left">
+              Su escritura es suave y de colores vibrantes.<br>
+				<strong>Medidas: </strong>0.5 mm <br>
+				<strong>Contiene: </strong>12 plumones.<br>
+				<strong>Precio: </strong>$420
+            </p>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="liner.html">
+              <img src="images/plumones/plu19.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Fine Liner Pastel</h4>
+            <p class="text-left">
+             <strong>Contiene: </strong>6 fineliner.<br>
+				<strong>Precio: </strong>$65
+            </p>
+          </div>
+			
+			<!-- Producto 6 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="glitter.html">
+              <img src="images/plumones/plu7.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Glitter markers</h4>
+            <p class="text-left">
+              <strong>Contiene: </strong>8 plumones.<br>
+				<strong>Precio: </strong>$135
+            </p>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="two.html">
+              <img src="images/plumones/plu10.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">2 Lines</h4>
+            <p class="text-left">
+             <strong>Medidas: </strong>0.5 mm <br>
+				<strong>Contiene: </strong>6 plumones.<br>
+				<strong>Precio: </strong>$95 el set
+            </p>
+          </div>
+			
+			 <!-- Producto 8 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="tres.html">
+              <img src="images/plumones/plu11.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">3 Lines</h4>
+            <p class="text-left">
+           <strong>Medidas: </strong>0.5 mm <br>
+				<strong>Contiene: </strong>6 plumones.<br>
+				<strong>Precio: </strong>$105 el set
+            </p>
+          </div>
+			
+			 <!-- Producto 9 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+             <a class="producto" href="brush.html">
+              <img src="images/plumones/plu1.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Brush Sign Pen</h4>
+            <p class="text-left">
+              <strong>Contiene: </strong>12 piezas y cuadernillo de práctica.<br>
+				<strong>Precio: </strong>$435
+            </p>
+          </div>
+			<!-- paginacion -->
+			<div class="col-md-12">
+				<div class="d-flex justify-content-center mt-3">
+			<ul class="pagination pagination-md">
+			<li class="page-item"><a class="page-link" href="productos2.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="producto.html">1</a></li>
+			<li class="page-item"><a class="page-link" href="productos2.html">2</a></li>
+			<li class="page-item active"><a class="page-link" href="productos3.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="productos4.html">4</a></li>
+			<li class="page-item"><a class="page-link" href="productos5.html">5</a></li>
+			<li class="page-item"><a class="page-link" href="productos6.html">6</a></li>
+			<li class="page-item"><a class="page-link" href="productos4.html">Siguiente</a></li>
+			</ul>
+		</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+	
+	<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary">
+  <section class="d-flex justify-content-center align-items-center p-4 border-bottom flex-column">
+    <div class="me-5 d-none d-lg-block">
+    </div>
+    <div>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasface.png" width="40" height="40" alt=""/>
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasinstagram.png" width="40" height="40" alt=""/>
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasmail.png" width="40" height="40" alt=""/>
+        <i class="fab fa-mail"></i>
+      </a>
+    </div>
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <p>Descubre un universo de encanto en cada clic. En nuestra papelería online, te esperan tesoros de diseño que transformarán tus ideas en hermosas realidades.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <p>
+            <a href="nosotros.html" class="text-reset">Sobre nosotros</a>
+          </p>
+          <p>
+            <a href="producto.html" class="text-reset">Productos</a>
+          </p>
+          <p>
+            <a href="contacto.html" class="text-reset">Contacto</a>
+          </p>
+          <p>
+            <a href="faqs.html" class="text-reset">FAQs</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Colors of Water
+  </div>
+</footer>
+<!-- Footer -->
+	
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+	
+	<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+ 
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+</body>
+</html>

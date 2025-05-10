@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Productos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilosproductos.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+		<h1><a href="index.html"><img src="images/lumaslogo.png" width="200"></a></h1>
+</header>
+<nav>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="index.html"><img src="images/home.png" width="35px"></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="producto.html">Productos</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="Contacto.html" role="button" data-bs-toggle="dropdown">Contacto</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contacto.html">Formulario</a></li>
+        <li><a class="dropdown-item" href="faqs.html">FAQ´s</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="carrito.html"><img src="images/carrito.png" width="35px"></a>
+    </li>
+  </ul>
+  <hr class="linea">
+</nav>
+<div class="container mt-4">
+	<div class="row">
+	<!-- Filtro -->
+      <div class="col-md-3">
+        <div class="filtro p-3 border rounded">
+          <h2>Filtrar Productos</h2>
+          <form>
+            <div class="form-group">
+              <label for="precioMin">Precio Mínimo:</label>
+              <input type="number" id="precioMin" name="precioMin" class="form-control" placeholder="Precio mínimo" min="0">
+            </div>
+
+            <div class="form-group">
+              <label for="precioMax">Precio Máximo:</label>
+              <input type="number" id="precioMax" name="precioMax" class="form-control" placeholder="Precio máximo" min="0">
+            </div>
+
+            <div class="form-group">
+              <label for="material">Material:</label>
+              <select id="material" name="material" class="form-control">
+                <option value="metal">Metal</option>
+                <option value="plastico">Plástico</option>
+                <option value="papel">Papel</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn w-100">Aplicar Filtros</button>
+          </form>
+        </div>
+      </div>
+
+
+	<!-- Productos -->
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Producto 1 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="monami.html">
+              <img src="images/lapiceros/lapi3.jpg" class="img-fluid rounded" alt="acri1">
+            </a>
+            <h4 class="text-center text-info mt-2">Monami Negro (3000)</h4>
+            <p class="text-left">
+             Delineador de 0.4 mm para caligrafía, tomar notas, escribir de forma precisa.<br>
+			<strong>Precio: </strong>$20 c/u.
+            </p>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="gelly.html">
+              <img src="images/lapiceros/lapi5.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Gelly Roll  08</h4>
+            <p class="text-left">
+              Perfectas para darle efecto a tus dibujos y apuntes.<br>
+			 <strong>Precio: </strong>$25 c/u
+            </p>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="pentel.html">
+              <img src="images/lapiceros/lapi9.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Pentel Energel</h4>
+            <p class="text-left">
+              Tinta negra con secado rápido.<br>
+				<strong>Medida: </strong>0.5 mm<br>
+				<strong>Precio: </strong>$35 c/u
+            </p>
+          </div>
+			<!-- Producto 4 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="carpeta.html">
+              <img src="images/libretas/lib1.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Carpeta Van Gogh</h4>
+            <p class="text-left">
+              <strong>Tamaño: </strong>Francés.<br>
+				<strong>Contenido: </strong>100 hojas negras tamaño francés. <br>
+				<strong>Precio: </strong>$310.
+            </p>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="arcoiris.html">
+              <img src="images/libretas/lib3.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Libreta Arcoiris</h4>
+            <p class="text-left">
+             <strong>Contenido: </strong>100 hojas / Pasta Dura.<br>
+				<strong>Gramaje: </strong>105 g/m².<br>
+				Hojas Blancas.<br><strong>Tamaño: </strong>Francés (22.5 x 15. 5 cm).<br>
+				<strong>Precio: </strong>$210 c/u..
+            </p>
+          </div>
+			
+			<!-- Producto 6 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="marmolp.html">
+              <img src="images/libretas/lib6.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Libreta Mármol Profesional</h4>
+            <p class="text-left">
+              100 hojas con pasta dura<br>
+				<strong>Tamaño: </strong>Profesional con hojas blancas 105 g/m2<br>
+				<strong>Precio: </strong>$210 c/u
+            </p>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="marmolf.html">
+              <img src="images/libretas/lib8.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Libreta Mármol Francesa</h4>
+            <p class="text-left">
+             100 hojas con pasta dura<br>
+				<strong>Tamaño: </strong>Francesa con hojas negras 105 g/m2<br>
+				<strong>Precio: </strong>$145
+            </p>
+          </div>
+			
+			 <!-- Producto 8 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="journey.html">
+              <img src="images/libretas/lib10.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Libreta Journey</h4>
+            <p class="text-left">
+            Libreta cosida de 38 hojas color negro.<br>
+				<strong>Tamaño: </strong>Media carta (21 cm x 14 cm).<br>
+				<strong>Gramaje: </strong>75 g/m².<br>
+				<strong>Precio: </strong>$40 c/u
+            </p>
+          </div>
+			
+			 <!-- Producto 9 -->
+          <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+            <a class="producto" href="plateado.html">
+              <img src="images/libretas/lib13.jpg" class="img-fluid rounded" alt="">
+            </a>
+            <h4 class="text-center text-info mt-2">Libreta Plateada</h4>
+            <p class="text-left">
+              <strong>Contenido: </strong>36 hojas.<br>
+				<strong>Medidas: </strong>21x14.5cm<br>
+				<strong>Precio: </strong>$20 c/u
+            </p>
+          </div>
+			<!-- paginacion -->
+			<div class="col-md-12">
+				<div class="d-flex justify-content-center mt-3">
+			<ul class="pagination pagination-md">
+			<li class="page-item"><a class="page-link" href="producto.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="producto.html">1</a></li>
+			<li class="page-item active"><a class="page-link" href="productos2.html">2</a></li>
+			<li class="page-item"><a class="page-link" href="productos3.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="productos4.html">4</a></li>
+			<li class="page-item"><a class="page-link" href="productos5.html">5</a></li>
+			<li class="page-item"><a class="page-link" href="productos6.html">6</a></li>
+			<li class="page-item"><a class="page-link" href="productos3.html">Siguiente</a></li>
+			</ul>
+		</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+	
+	<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary">
+  <section class="d-flex justify-content-center align-items-center p-4 border-bottom flex-column">
+    <div class="me-5 d-none d-lg-block">
+    </div>
+    <div>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasface.png" width="40" height="40" alt=""/>
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasinstagram.png" width="40" height="40" alt=""/>
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset"><img src="images/lumasmail.png" width="40" height="40" alt=""/>
+        <i class="fab fa-mail"></i>
+      </a>
+    </div>
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <p>Descubre un universo de encanto en cada clic. En nuestra papelería online, te esperan tesoros de diseño que transformarán tus ideas en hermosas realidades.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <p>
+            <a href="nosotros.html" class="text-reset">Sobre nosotros</a>
+          </p>
+          <p>
+            <a href="producto.html" class="text-reset">Productos</a>
+          </p>
+          <p>
+            <a href="contacto.html" class="text-reset">Contacto</a>
+          </p>
+          <p>
+            <a href="faqs.html" class="text-reset">FAQs</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    Colors of Water
+  </div>
+</footer>
+<!-- Footer -->
+	
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+.js"></script>
+	
+	<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
+opper.min.js"></script>
+ 
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
+</body>
+</html>
